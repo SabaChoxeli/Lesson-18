@@ -2,7 +2,7 @@
 // როგორც ნამდვილი სააათი.გამოიყენეთ ქვემოთ მობმული სურათი(საათი.png).
 
 function displayClock() {
-  setTimeout(function () {
+  setInterval(function () {
     const time = new Date().toLocaleTimeString();
     document.querySelector(".clock").innerHTML = time;
   }, 1000);
@@ -31,3 +31,10 @@ function checktime(i) {
 // clock();
 
 //თან PM-AM რომ იყოს და თან წინ 0-ები ეწეროს ერთად ვერ გავაკეთე და PM-AM დავტოვე მარტო :დ
+
+// 2. ლექციაზე შექმნილ სლაიდერს დავამატოთ:
+// 1. როდესაც ავტომატურად ხდება სლაიდების შეცვლა თუ მაუსს მივიტან სურათთან,
+//   ავტომატური სლაიდი გაჩერდეს.
+// 2. თუ მაუსი მიტანილი მაქვს სურათზე და შემდეგ გამოვწევ სურათიდან,
+//   ავტომატური სლაიდი გაგრძელდეს. (მოუსემინეთ  mouseenter, mouseleave)  ივენთებს
+// დამხმარე მასალა: https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event

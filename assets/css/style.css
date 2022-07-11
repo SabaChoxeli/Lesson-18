@@ -14,3 +14,40 @@
   font-family: monospace;
   font-size: 30px;
 }
+
+.slider-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+.slider-wrapper img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.slider-item {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.buttons {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+}
+
+.slide-button {
+  /* position: absolute; */
+  font-size: 35px;
+  background-color: darkgray;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
