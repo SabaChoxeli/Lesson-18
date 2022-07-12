@@ -124,7 +124,7 @@ const dots = document.querySelectorAll(".dot");
 
 function initDots() {
   dots.forEach((dot, i) => {
-    activeIndex = 1;
+    activeIndex = i;
     renderSlides();
   });
 }
